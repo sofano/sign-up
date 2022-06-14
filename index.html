@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up form</title>
+</head>
+<body>
+    <div class="img-container">
+        <div class="brand">
+            <object class="logo" data="images/fda-weights.svg" type="image/svg+xml"></object>
+            <span>Lift-it</span>
+        </div>
+        <img src="images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg" alt="background-image">
+    </div>
+    <div class="form-container">
+        <div class="intro">
+            <p>This is not a real service. but you nead to workout and do some lifts bro!... the summer is coming</p>
+            <p>So stop wasting time, take a dumbell and <span>Lift-it</span>.</p>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div class="inputs">
+                    <div class="gender">Gender : *
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="">
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="input">
+                        <label for="first-name">First name: *</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last-name">Last name: *</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="E-mail">E-mail: *</label>
+                        <input type="email" name="email" id="emal" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone" minlength="9" maxlength="13">
+                    </div>
+                    <div class="input">
+                        <label for="password">Enter password: *</label>
+                        <input type="password" name="" id="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="password1">Confirm password: *</label>
+                        <input type="password" name="password" id="password1" required>
+                    </div>
+                </div>
+                <button type="submit">Create account</button>
+            </form>
+        </div>
+        <div class="log-in">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
