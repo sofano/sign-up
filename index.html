@@ -18,7 +18,7 @@
     </div>
     <div class="form-container">
         <div class="intro">
-            <p>This is not a real service. but you nead to workout and do some lifts bro!... the summer is coming</p>
+            <p>This is not a real service. but you need to workout and do some lifts bro!... the summer is coming</p>
             <p>So stop wasting time, take a dumbell and <span>Lift-it</span>.</p>
         </div>
         <div class="form">
@@ -26,11 +26,12 @@
                 <div class="inputs">
                     <div class="gender">Gender : *
                         <input type="radio" name="gender" id="male" value="male" required>
-                        <label for="male">Male</label>
+                        <label for="male" >Male</label>
                         <input type="radio" name="gender" id="female" value="female">
                         <label for="female">Female</label>
                         <input type="radio" name="gender" id="other" value="">
                         <label for="other">Other</label>
+                        <div class="precise"></div>
                     </div>
                     <div class="input">
                         <label for="first-name">First name: *</label>
@@ -42,7 +43,7 @@
                     </div>
                     <div class="input">
                         <label for="E-mail">E-mail: *</label>
-                        <input type="email" name="email" id="emal" required>
+                        <input type="email" name="email" id="emal" placeholder="xyz@lift-it.com" required>
                     </div>
                     <div class="input">
                         <label for="phone">Phone number:</label>
@@ -50,7 +51,7 @@
                     </div>
                     <div class="input">
                         <label for="password">Enter password: *</label>
-                        <input type="password" name="" id="password" required>
+                        <input type="password" name="" id="password" minlength="6" pattern="(\D*\d+\D+|\D+\d+\D*)" title="your password should contain at least 1 number and caracters" required>
                     </div>
                     <div class="input">
                         <label for="password1">Confirm password: *</label>

@@ -13,7 +13,6 @@
 }
 body{
     background-image: linear-gradient(45deg , rgb(235, 77, 77), rgb(65, 65, 219));
-    width: 100vw;
     height: 100vh;
     display: flex;
 
@@ -45,9 +44,9 @@ img{
     width: 100px
 }
 
-.form-container{/* 
-    background-color: var(--color-base); */
+.form-container{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center; 
     
@@ -55,17 +54,13 @@ img{
 .intro{
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
+    margin: 30px 30px 30px 30px;
     font-weight: 600;
-    color: rgb(126, 126, 126);
+    color: rgb(197, 194, 194);
 }
 .intro span {
     font-family: 'Permanent Marker', cursive;
     color: var(--color-second);
-}
-.form {
-    
-   
 }
 .inputs{
     box-shadow: 0 3px 5px black;
@@ -82,23 +77,45 @@ button[type="submit"]{
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(1.1);
 }
 .gender{
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+.precise{
+    flex-basis: 100%;
+}
+
+label[for='precise']{
+    margin-right: 15px;
 }
 .input{
     display: flex;
     flex-direction: column;
     width: 40%;
+    
 }
 input[type]{
+    box-sizing: border-box;
     border-radius: 5px;
     border: none;
-    height: 1.2rem;
+    height: 1.3rem;
+    padding: 0 3px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--color-base);
 }
 
 .log-in{
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px 0 0 30px;
-    color: rgb(99, 94, 94);
+    color: rgb(163, 159, 159);
 }
